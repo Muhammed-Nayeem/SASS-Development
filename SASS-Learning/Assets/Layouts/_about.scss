@@ -1,0 +1,56 @@
+.about-area {
+  padding: 30px 0;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+
+  .about-left {
+    flex-basis: 75%;
+    margin-right: 20px;
+    padding: 12px 10px;
+    @include border(1px, solid, $border-color, 3px);
+
+    h3 {
+      font-size: 22px;
+      color: $heading-color;
+    }
+    p {
+      color: $text-color;
+      margin: 20px 0;
+      font-size: 18px;
+    }
+    a {
+      @include button;
+
+      &:hover {
+        @include hover;
+      }
+    }
+  }
+  .about-sidebar {
+    flex-basis: 15%;
+    padding: 10px 0;
+
+    ul {
+      li {
+        border-bottom: 1px solid $border-color;
+
+        a {
+          display: block;
+          padding: 8px;
+          background-color: $link-color;
+          color: $common-color;
+          transition: 0.3s;
+
+          &:hover {
+            background-color: $heading-color;
+          }
+        }
+        &:last-child {
+          border-bottom: 0;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,37 @@
+.header-area {
+  background-color: $primary-color;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  padding: 5px 8px;
+
+  .logo {
+    flex-basis: 8%;
+    margin-right: 20px;
+  }
+  .menu {
+    flex-basis: 80%;
+
+    ul {
+      text-align: right;
+
+      li {
+        display: inline-block;
+
+        a {
+          font-size: 20px;
+          display: block;
+          padding: 0 10px;
+          color: $link-color;
+          transition: 0.3s;
+
+          &:hover {
+            color: $hover-color;
+          }
+        }
+      }
+    }
+  }
+}

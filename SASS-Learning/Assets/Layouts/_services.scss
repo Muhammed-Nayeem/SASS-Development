@@ -1,0 +1,31 @@
+.services-area {
+  padding: 30px 12px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+
+  .single-services {
+    flex-basis: 30%;
+    background-color: $boxes-bgColor;
+    padding: 15px 10px;
+    @include border(1px, solid, $border-color, 3px);
+
+    h3 {
+      color: $heading-color;
+      font-size: 22px;
+    }
+    p {
+      color: $text-color;
+      margin: 12px 0;
+      font-size: 18px;
+    }
+    a {
+      @include button;
+
+      &:hover {
+        @include hover;
+      }
+    }
+  }
+}

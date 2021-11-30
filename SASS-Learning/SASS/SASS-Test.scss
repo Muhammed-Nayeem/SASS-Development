@@ -1,0 +1,23 @@
+@for $i from 1 through 12 {
+  .box-#{$i} {
+    width: 100px * $i;
+  }
+}
+
+@for $i from 1 through 20 {
+  .mt-#{$i * 10} {
+    margin-top: 10 * $i + px;
+  }
+  .mb-#{$i * 10} {
+    margin-bottom: 10px * $i;
+  }
+}
+
+@for $i from 1 through 12 {
+  .pt-#{$i * 10} {
+    padding-top: 10 * $i + px;
+  }
+  .pb-#{$i * 10} {
+    padding-bottom: 10px * $i;
+  }
+}
